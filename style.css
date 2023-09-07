@@ -699,12 +699,12 @@ form > .btn:active {
     color: #38D66C;
 }
 
-.footer-contact {
+/* .footer-contact {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-}
+} */
 
 .footer-contact-2 {
     display: flex;
@@ -713,6 +713,13 @@ form > .btn:active {
     flex-wrap: nowrap;
     align-content: stretch;
     align-items: baseline;
+    font-size: 16px !important;
+    color: #f5f5f5 !important;
+}
+
+.footer-contact-2 > p > a:hover {
+    text-decoration: underline;
+    color: #ccc;
 }
 
 .rights {
