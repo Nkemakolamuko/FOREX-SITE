@@ -29,11 +29,11 @@
       <div class="nav-container">
         <img src="Img/NO-BG.png" alt="Our logo" class="logo" />
         <ul class="nav-links">
-          <li><a href="index.html" class="">Home</a></li>
-          <li><a href="#about" class="">About Us</a></li>
-          <li><a href="#services">Start</a></li>
-          <li><a href="#articles">News</a></li>
-          <li><a href="#teams">Team</a></li>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#services" class="nav-link">Start</a></li>
+          <li><a href="#articles" class="nav-link">News</a></li>
+          <li><a href="#teams" class="nav-link">Team</a></li>
         </ul>
         <button type="button" class="contact-button">
           <a href="#contacts" id="contact">Contact Us</a>
@@ -41,10 +41,10 @@
       </div>
     </nav>
 
-      <div class="hero" >
+      <div class="hero" id="home">
         <div class="bg-over">
           <div class="text">
-            <h1>
+            <h1 class="hidden">
               Welcome To <br>
               Jamal Forex Hub
             </h1>
@@ -56,7 +56,7 @@
               practice, and potentially excel in the art of trading currencies
               in the global market.
             </p>
-            <button type="button" class="btn">
+            <button type="button" class="btn hidden">
               <a href="#contacts">Contact Us</a>
             </button>
           </div>
@@ -64,7 +64,8 @@
       </div>
 
       <!-- ABOUT -->
-      <main class="about " id="about">
+      <div id="about"></div>
+      <main class="about">
         <img src="Img/WHY-US.jpg" alt="Our Image" class="about-img" />
         <div class="text-area">
           <div class="icon">
@@ -147,8 +148,9 @@
       </section>
 
       <!-- Blogs -->
-      <section class="blog" id="articles">
-        <div class="blog-text hidden">
+      <div id="articles"></div>
+      <section class="blog">
+        <div class="blog-text">
             <h2>Best Latest FX News</h2>
             <h3>Use DailyFX As Reference Not Financial Adviser</h3>
             <p>DailyFX is a foreign exchange (FX) news and analysis website that provides market news, technical analysis, trading tools, and educational resources to traders and investors. It was founded in 2005 and is headquartered in Wilmington, Delaware.</p> <br>
@@ -180,7 +182,8 @@
                         <img src="Img/person0.png" alt="Team Member Image">
                     </div>
                     <h2>Jamal</h2>
-                    <p class="hidden">Role: Founder JFH <br> Location: United Kingdom</p>
+                    <p>Role: Founder JFH <br> Location: United Kingdom</p>
+                    <p class="card-link hidden"> <a href="https://twitter.com/NwekeVincent14" target="_blank">Visit Profile</a></p>
                 </div>
             </div>
             <div class="team-data">
@@ -189,7 +192,8 @@
                         <img src="Img/person1.png" alt="Team Member Image">
                     </div>
                     <h2>Samuel</h2>
-                    <p class="hidden">Role: Mentor/Coach <br> Location: Nigeria</p>
+                    <p>Role: Mentor/Coach <br> Location: Nigeria</p>
+                    <p class="card-link hidden"> <a href="https://twitter.com/NwekeVincent14" target="_blank">Visit Profile</a></p>
                 </div>
             </div>
             <div class="team-data">
@@ -198,7 +202,8 @@
                         <img src="Img/person2.png" alt="Team Member Image">
                     </div>
                     <h2>Evelyn</h2>
-                    <p class="hidden">Role: Product Manager <br> Location: London</p>
+                    <p>Role: Product Manager <br> Location: London</p>
+                    <p class="card-link hidden"> <a href="https://twitter.com/NwekeVincent14" target="_blank">Visit Profile</a></p>
                 </div>
             </div>
             <div class="team-data">
@@ -207,7 +212,8 @@
                         <img src="Img/person0.png" alt="Team Member Image">
                     </div>
                     <h2>Comfort</h2>
-                    <p class="hidden">Role: Brand Ambassador <br> Location: Australia</p>
+                    <p>Role: Brand Ambassador <br> Location: Australia</p>
+                    <p class="card-link hidden"> <a href="https://twitter.com/NwekeVincent14" target="_blank">Visit Profile</a></p>
                 </div>
             </div>
             <div class="team-data">
@@ -216,7 +222,8 @@
                         <img src="Img/person1.png" alt="Team Member Image">
                     </div>
                     <h2>Charis</h2>
-                    <p class="hidden">Role: Sales<br> Location: Canada</p>
+                    <p>Role: Sales<br> Location: Canada</p>
+                    <p class="card-link hidden"> <a href="https://twitter.com/NwekeVincent14" target="_blank">Visit Profile</a></p>
                 </div>
             </div>
             <div class="team-data">
@@ -225,7 +232,8 @@
                         <img src="Img/person2.png" alt="Team Member Image">
                     </div>
                     <h2>Sherifat</h2>
-                    <p class="hidden">Role: Developer <br> Location: Paris,</p>
+                    <p>Role: Developer <br> Location: Paris </p>
+                    <p class="card-link hidden"> <a href="https://twitter.com/NwekeVincent14" target="_blank">Visit Profile</a></p>
                 </div>
             </div>
 
@@ -260,11 +268,11 @@
               </div>
               <div class="form-group">
                   <label for="level">Your Current Level</label>
-                  <select name="option" required>
-                    <option>None</option>
-                    <option>Beginner</option>
-                    <option>Intermediate</option>
-                    <option>Expert</option>
+                  <select name="level" required>
+                    <option value="None">None</option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Expert">Expert</option>
                   </select>
               </div>
               <div class="form-group">
@@ -287,30 +295,30 @@
               <p>The Millionaires Hub.</p> 
               <p>Under 25 Millionaires a top priority here!</p>
               <div class="footer-icon">
-                <div class="footer-icons"><a href="#"><ion-icon name="logo-facebook" class="my-icon1"></ion-icon></a></div>
-              <div class="footer-icons"><a href="#"><ion-icon name="logo-instagram" class="my-icon2"></ion-icon></a></div>
-              <div class="footer-icons"><a href="#"><ion-icon name="logo-twitter" class="my-icon3"></ion-icon></a></div>
-              <div class="footer-icons"><a href="#"><ion-icon name="logo-whatsapp" class="my-icon4"></ion-icon></a></div>
+                <div class="footer-icons"><a href="https://twitter.com/NwekeVincent14" target="_blank"><ion-icon name="logo-facebook" class="my-icon1"></ion-icon></a></div>
+              <div class="footer-icons"><a href="https://twitter.com/NwekeVincent14" target="_blank"><ion-icon name="logo-instagram" class="my-icon2"></ion-icon></a></div>
+              <div class="footer-icons"><a href="https://twitter.com/NwekeVincent14" target="_blank"><ion-icon name="logo-twitter" class="my-icon3"></ion-icon></a></div>
+              <div class="footer-icons"><a href="https://twitter.com/NwekeVincent14" target="_blank"><ion-icon name="logo-whatsapp" class="my-icon4"></ion-icon></a></div>
             </div>
               </div>
             <div class="footer-contact-2">
               <p class="footer-header">Contact Links</p>
-              <p> <a href="#">sherifat@gmailcom</a></p>
+              <p> <a href="https://twitter.com/NwekeVincent14" target="_blank">sherifat@gmailcom</a></p>
               <p>+234 8012345678</p>
               <p>No 12 Aderoju Street, Lagos</p>
             </div>
             <div class="footer-contact-2">
               <p class="footer-header">Academy</p>
-              <p> <a href="#">Terms Of Use</a></p>
-              <p> <a href="#">Privacy and Policy</a></p>
-              <p> <a href="#">License</a></p>
-              <p> <a href="#">About Ads</a></p>
+              <p> <a href="https://twitter.com/NwekeVincent14" target="_blank">Terms Of Use</a></p>
+              <p> <a href="https://twitter.com/NwekeVincent14" target="_blank">Privacy and Policy</a></p>
+              <p> <a href="https://twitter.com/NwekeVincent14" target="_blank">License</a></p>
+              <p> <a href="https://twitter.com/NwekeVincent14" target="_blank">About Ads</a></p>
             </div>
             <div class="footer-contact-2">
               <p class="footer-header">About</p>
-              <p> <a href="#">FAQ</a></p>
-              <p> <a href="#">Advertise</a></p>
-              <p> <a href="#">Book Appointment</a></p>
+              <p> <a href="https://twitter.com/NwekeVincent14" target="_blank">FAQ</a></p>
+              <p> <a href="https://twitter.com/NwekeVincent14" target="_blank">Advertise</a></p>
+              <p> <a href="https://twitter.com/NwekeVincent14" target="_blank">Book Appointment</a></p>
             </div>
           </div>
             <p class="rights">All Rights Reserved</p>
