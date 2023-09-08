@@ -53,7 +53,7 @@ const navLinks = document.querySelectorAll('.nav-link');
 const observerOptions = {
   root: null,
   rootMargin: '0px',
-  threshold: 0.9, // Adjust this threshold for when the link becomes active
+  threshold: 0.7, // Adjust this threshold for when the link becomes active
 };
 
 // Callback function for the Intersection Observer
