@@ -25,7 +25,7 @@ hiddenElements.forEach((el) => observer.observe(el))
         if (target.length) {
           $('html, body').stop().animate({
             scrollTop: target.offset().top - 100
-          }, 500); 
+          }, 1000); 
         }
     });
   });
