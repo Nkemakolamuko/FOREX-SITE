@@ -87,3 +87,6 @@ navLinks.forEach((link) => {
     sectionObserver.observe(targetSection);
   }
 });
+
+
+
