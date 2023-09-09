@@ -1,6 +1,10 @@
 /* Media query for tablets */
 @media screen and (max-width: 768px) {
 
+    body {
+        overflow-x: hidden;
+    }
+
     .section {
         padding-bottom: 1rem;
     }
@@ -405,6 +409,11 @@
 }
 
 @media screen and (max-width: 1090px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
     .hamburgerMenu {
         display: block;
         cursor: pointer;
