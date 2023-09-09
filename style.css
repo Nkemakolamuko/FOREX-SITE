@@ -68,6 +68,11 @@ a {
     color: white;
 }
 
+/* hamburger */
+.hamburgerMenu {
+    display: none;
+}
+
 /* Logo */
 .logo {
     display: block;
@@ -151,7 +156,7 @@ a {
     transform: scale(0.95);
 }
 
-.contact-button a {
+a .contact-button  {
     display: block;
     color: #ffffff;
     font-size: 16px;

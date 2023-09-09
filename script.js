@@ -89,4 +89,11 @@ navLinks.forEach((link) => {
 });
 
 
+// Toggle
+const toggleBtn = document.querySelector('.hamburgerMenu');
+const navLink = document.querySelector('.nav-links');
 
+toggleBtn.addEventListener('click', () => {
+  toggleBtn.classList.toggle('.hamburgerMenuClose');
+  navLink.classList.toggle('open');
+});
