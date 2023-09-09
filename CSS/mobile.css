@@ -1,6 +1,10 @@
 /* Media query for tablets */
 @media screen and (max-width: 768px) {
 
+    .section {
+        padding-bottom: 1rem;
+    }
+
     .logo {
         height: 50px;
         width: 80px;
@@ -217,6 +221,7 @@
     /* Team */
     .team-two {
         margin: 0 10px;
+        padding-top: 5px;
     }
 
     .team-two > h2 {
@@ -226,6 +231,7 @@
     .team-main {
         display: flex;
         overflow-x: scroll;
+        gap: 20px;
     }
 
     .team-data {
@@ -278,7 +284,7 @@
 
     label {
         display: block;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         font-size: 12px !important;
     }
     
@@ -289,7 +295,7 @@
         border-radius: 3px;
         height: 30px;
         outline: none;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);
         caret-color: #3029b3;
     }
     
