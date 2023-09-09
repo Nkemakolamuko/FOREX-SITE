@@ -1,5 +1,5 @@
 /* Media query for tablets */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1090px) {
 
     body {
         overflow-x: hidden;
@@ -18,7 +18,7 @@
         position: sticky;
     }
 
-    .nav-links {
+    /* .nav-links {
         position: absolute;
         top: 100%;
         right: 0;
@@ -36,6 +36,55 @@
         list-style: none;
         border-bottom-left-radius: 10px;
         transition: all 0.5s ease-in-out;
+    } */
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 70vw;
+        height: 50vh;
+        background: #ccc;
+        text-align: center;
+        font-weight: bolder;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 0px;
+        color: #4f46e5;
+        list-style: none;
+        border-bottom-left-radius: 10px;
+        transition: all 0.5s ease-in-out;
+        padding: 0px 0px 20px 0px;
+    }
+
+    .nav-links a {
+        font-size: 14px !important;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .nav-link.active {
+        width: 100%;
+    }
+    
+    .nav-links a::before {
+        display: none;
+    }
+    
+    .nav-links a:hover {
+        width: 100%;
+        background-color: #4f46e5; 
+        height: 30px;
+    }
+
+    .nav-links.open {
+        right: 0;
+    }
+
+    a .contact-button {
+        display: none;
     }
 
     /* hamburger */
@@ -45,7 +94,7 @@
     
     .hamburgerMenu ion-icon {
         color: red;
-        font-size: 30px !important;
+        font-size: 50px !important;
         cursor: pointer;
 
     }
@@ -408,7 +457,7 @@
 
 }
 
-@media screen and (max-width: 1090px) {
+/* @media screen and (max-width: 1700px) {
 
     body {
         overflow-x: hidden;
@@ -422,10 +471,10 @@
     .hamburgerMenu ion-icon {
         color: red;
         font-size: 50px !important;
-    }
+    } */
 
     /* Add to other media as well */
-    .nav-links {
+    /* .nav-links {
         position: absolute;
         top: 100%;
         right: -100%;
@@ -473,4 +522,4 @@
     a .contact-button {
         display: none;
     }
-}
+} */
