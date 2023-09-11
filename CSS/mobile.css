@@ -18,6 +18,12 @@
         position: sticky;
     }
 
+    .ham {
+        display: flex;
+        flex-direction: row;
+        gap: 0px;
+    }
+
     /* .nav-links {
         position: absolute;
         top: 100%;
@@ -84,6 +90,10 @@
         right: 0;
     }
 
+    /* .nav-links.close {
+        right: 100%;
+    } */
+
     a .contact-button {
         display: none;
     }
@@ -94,10 +104,19 @@
     }
     
     .hamburgerMenu ion-icon {
-        color: red;
+        color: rgb(0, 0, 0);
         font-size: 50px !important;
         cursor: pointer;
+    }
 
+    .hamburgerMenuClose {
+        display: block;
+    }
+    
+    .hamburgerMenuClose ion-icon {
+        color: rgb(0, 0, 0);
+        font-size: 50px !important;
+        cursor: pointer;
     }
 
     .nav-container {
@@ -273,7 +292,7 @@
     }
 
     .blog-text p {
-        font-size: 10px !important;
+        font-size: 14px !important;
     }
 
     #btn {

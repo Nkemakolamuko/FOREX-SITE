@@ -73,6 +73,10 @@ a {
     display: none;
 }
 
+.ham {
+    display: none;
+}
+
 /* Logo */
 .logo {
     display: block;
