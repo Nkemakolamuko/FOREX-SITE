@@ -221,16 +221,21 @@ a .contact-button  {
 .about-img {
     width: 100%;
     height: 100%;
-    margin-top: 20px;
-    transition: all 0.3s;
+    overflow: hidden;
+    /* margin-top: 20px; */
     box-shadow: 0 8px 10px 4px rgba(19, 19, 20, 0.5);
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
+    border-radius: 16px;
 }
 
-.about-img:hover {
-    transform: scale(1.1);
+.about-img img {
+    object-fit: cover;
+    transition: transform 0.8s;
+    height: 100%;
+    width: 100%;
+}
+
+.about-img:hover img {
+    transform: scale(2.0);
 }
 
 /* Style for the image overlay */
@@ -345,7 +350,7 @@ a .contact-button  {
 }
   
 .card {
-    width: 370px;
+    width: 370px; /* 310 */
     margin: 10px;
     background-color: #fff;
     border: 1px solid #ccc;
@@ -356,18 +361,48 @@ a .contact-button  {
     border-top-right-radius: 10px;
 }
   
-.card iframe {
+iframe {
     width: 100%;
     height: 315px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    position: relative;
+    border: none;
+}
+
+.iframe-overlay {
+    position: absolute;
+    /* top: 0; */
+    /* left: 0; */
+    width: inherit; /* I was giving it a width value which was messing the overlay width up, but I changed it to inherit, and that fixed her. The inherit most likely worked because the positioning value */
+    height: 315px;
+    background-color: rgba(19, 19, 20, 0.5);
+    z-index: 1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iframe-overlay-link > span {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #4f46e5;
+    border: 1px solid #0c00f5;
+}
+
+.iframe-overlay-link:hover > span {
+    background-color: #09046b;
 }
   
 .card-content {
     padding: 10px;
 }
 
-.card-content > p {
+.expandable-content {
     line-height: 1.5rem;
     padding: 20px 5px;
     color: darkslategrey;
@@ -381,6 +416,7 @@ a .contact-button  {
 .card-content h3 {
     margin: 10px auto;
     padding: 5px;
+    color: black;
 }
 
 /* BLOG */
@@ -570,10 +606,11 @@ a .contact-button  {
 }
 
 .main-contact > p:first-child {
-    font-size: 24px !important;
-    font-weight: 500;
     padding-bottom: 10px;
     color: #424242;
+    font-size: 44px !important;
+    font-weight: 600;
+    line-height: 100px;
 }
 
 .side-by-side-form {

@@ -184,7 +184,7 @@
 
     .about h2 {
         font-size: 34px !important;
-        font-weight: 400;
+        /* font-weight: 400; */
         line-height: 50px;
     }
 
@@ -202,7 +202,7 @@
     }
     
     .bar {
-        font-size: 12px !important;
+        font-size: 13px !important;
         height: 20px;
         width: 20px;
     }
@@ -217,7 +217,7 @@
     /* Start */
     .card-items > h2 {
         font-size: 34px !important;
-        font-weight: 400;
+        /* font-weight: 400; */
         line-height: 30px;
         text-align: left;
     }
@@ -225,27 +225,37 @@
     .card-items {
         margin: 0 10px;
         padding-top: 1rem;
+        /* display: flex; */
+        /* width: 1000px; */
+        overflow-x: scroll;
     }
 
     .cards {
         display: flex;
-        flex-direction: column;
-        gap: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
         margin: 20px 0px;
     }
 
     .card {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         width: 100%;
-        border-top-left-radius: 0px;
-        border-top-right-radius: 0px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
     }
 
-    .card iframe {
-        border-top-left-radius: 0px;
-        border-top-right-radius: 0px;
+    iframe {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
         height: 100%;
+        width: 100%;
+        border: none;
+    }
+
+    .iframe-overlay {
+        display: none;
     }
 
     .card-content {
@@ -283,7 +293,7 @@
 
     .blog-text > h2 {
         font-size: 34px !important;
-        font-weight: 400px;
+        /* font-weight: 400px; */
         line-height: 60px;
     }
 
@@ -373,6 +383,10 @@
         margin: 0px 20px;
     }
     
+    .main-contact > p:first-child {
+        font-size: 34px !important;
+    }
+
     .side-by-side-form {
         display: grid;
         grid-template-columns: 1fr;

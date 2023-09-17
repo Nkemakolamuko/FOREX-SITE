@@ -73,7 +73,9 @@
       <!-- ABOUT -->
       <div id="about"></div>
       <main class="about">
-        <img src="Img/WHY-US.jpg" alt="Our Image" class="about-img" />
+        <div class="about-img">
+         <img src="Img/WHY-US.jpg" alt="Our Image" />
+        </div>
         <div class="text-area">
           <div class="icon">
             <span class="bar">A</span><span class="bar">B</span
@@ -96,7 +98,11 @@
           <h2>Where You Should Start From</h2>
           <div class="cards">
             <div class="card">
-              <iframe src="https://www.youtube.com/embed/PA9o7dvclw0?si=FwAhvNpig1JE-LbP" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <div class="iframe-overlay">
+                <a href="https://youtu.be/PA9o7dvclw0?si=ZbfqvDamU70_x_NH" target="_blank" class="iframe-overlay-link">
+                  <span>Click to Watch</span> </a>
+              </div>
+                <iframe src="https://www.youtube.com/embed/PA9o7dvclw0?si=FwAhvNpig1JE-LbP" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               <div class="card-content">
                 <h3>
                   As A Beginner
@@ -114,7 +120,11 @@
               </div>
             </div>
             <div class="card">
-              <iframe src="https://www.youtube.com/embed/eynxyoKgpng?si=gE00FumZf4TsjhQV" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <div class="iframe-overlay">
+                <a href="https://youtu.be/T4dpcVZoRtg?si=4yNxLQO8e-iwqMR8" target="_blank" class="iframe-overlay-link">
+                  <span>Click to Watch</span></a>
+              </div>
+                <iframe src="https://www.youtube.com/embed/eynxyoKgpng?si=gE00FumZf4TsjhQV" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               <div class="card-content">
                 <h3>
                   As An Intermediate
@@ -132,6 +142,11 @@
               </div>
             </div>
             <div class="card">
+              <div class="iframe-overlay">
+                <a href="https://youtu.be/0HYc839Hl24?si=8y-iR1eb6V2U1MaW" target="_blank" class="iframe-overlay-link">
+                  <span>Click to Watch</span>
+                </a>
+              </div>
               <iframe src="https://www.youtube.com/embed/0HYc839Hl24?si=OItwdS5L6fTfkSIT" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               <div class="card-content">
                 <h3>
@@ -265,7 +280,7 @@
       <!-- CONTACT -->
       <section class="contact-section section" id="contacts">
         <div class="main-contact hidden">
-          <p>Contact Us</p>
+          <p class="contact-heading">Contact Us</p>
           <form action="https://formspree.io/f/xaygjagd" method="POST" id="my-Form">
             <div class="side-by-side-form">
               <div class="form-group">
