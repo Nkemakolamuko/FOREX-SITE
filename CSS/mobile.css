@@ -24,26 +24,6 @@
         gap: 0px;
     }
 
-    /* .nav-links {
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 50vw;
-        height: 50vh;
-        background: #ccc;
-        text-align: center;
-        font-weight: bolder;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        gap: 30px;
-        color: #4f46e5;
-        list-style: none;
-        border-bottom-left-radius: 10px;
-        transition: all 0.5s ease-in-out;
-    } */
-
     .nav-links {
         position: absolute;
         top: 100%;
@@ -90,10 +70,6 @@
         right: 0;
     }
 
-    /* .nav-links.close {
-        right: 100%;
-    } */
-
     a .contact-button {
         display: none;
     }
@@ -139,7 +115,6 @@
         height: 50vh;
     }
     
-    /* for adding overlay color // check HTML for corresponding div */
     .bg-over {
         height: 50vh;
     }
