@@ -40,9 +40,10 @@ form.addEventListener('submit', () => {
 // Updating date 
 const today = document.querySelectorAll('.today');
 
-today.forEach(elem => {
-  elem.textContent = new Date().toDateString();
-})
+function todaysDate() {today.forEach(elem => {
+  elem.textContent = new Date().toLocaleTimeString();
+})}
+setInterval(todaysDate, 1000)
 
 
 
