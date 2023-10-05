@@ -604,6 +604,7 @@ iframe {
     align-items: center;
     padding: 10px 10px 0px 10px;
     border-radius: 10px 5px 0 25px;
+    transition: all 0.5s;
 }
 
 /* .image-overlay {
