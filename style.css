@@ -290,6 +290,7 @@ a .contact-button  {
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(49, 49, 221, 0.7);
     width: 30%;
+    white-space: no-wrap;
 }
 
 .text-area .btn:hover {

@@ -14,7 +14,6 @@ const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el))
 
 
-
 // Smooth Scroll
 
 $(document).ready(function() {
