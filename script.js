@@ -86,7 +86,7 @@ const sectionObserver = new IntersectionObserver(
 
 // Observe each section
 navLinks.forEach((link) => {
-  const targetId = link.getAttribute("href").substring(1); // Remove the "#" symbol
+  const targetId = link.getAttribute("href").substring(1);
   const targetSection = document.getElementById(targetId);
   if (targetSection) {
     sectionObserver.observe(targetSection);

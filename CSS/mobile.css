@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Ubuntu&display=swap");
+
 /* Media query for tablets */
 @media screen and (max-width: 1090px) {
   body {
@@ -28,25 +30,26 @@
     top: 100%;
     right: 100%;
     width: 100vw;
-    /* height: 50vh; */
-    background-color: rgba(255, 255, 255, 0.6);
+    height: 50vh;
+    background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(5px);
     z-index: 999;
     text-align: center;
     font-weight: bolder;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 0px;
     color: #4f46e5;
     list-style: none;
     transition: all 0.5s ease-in-out;
-    padding: 20px 0px;
+    padding: 0px 0px 20px 0px;
   }
 
   .nav-links a {
     font-size: 14px !important;
+    padding: 10px 0px;
     width: 100%;
     display: inline-block;
     color: #060072 !important;
@@ -64,7 +67,7 @@
     width: 100%;
     background-color: #4f46e5;
     /* height: 30px; */
-    padding: 5px 0px;
+    /* padding: 5px 0px; */
     color: white !important;
   }
 
@@ -123,8 +126,15 @@
 
   .text {
     font-size: 16px;
-    padding-top: 60px;
+    padding-top: 30px;
     margin: 0 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  .new-img {
+    margin-bottom: 2rem;
   }
 
   .text h1 {
@@ -316,17 +326,24 @@
   .team-data {
     padding: 0px;
     text-align: center;
-    border-radius: 5px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
   }
 
   .team-member {
     display: flex;
-    flex-direction: row;
-    height: 200px;
+    flex-direction: column;
+    height: 300px;
+    justify-content: space-between;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
   }
 
   .member-image {
-    border-radius: 50px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     margin-right: 0px;
     width: 200px;
     height: 200px;
@@ -336,7 +353,7 @@
 
   .member-image > img {
     height: 210px;
-    border-radius: 50px;
+    /* border-radius: 50px; */
   }
 
   .member-imagebackground {
@@ -345,8 +362,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 10px 10px 0px;
-    border-radius: 10px 5px 0 25px;
+    padding: 10px 0px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
     height: 200px;
   }
 
@@ -490,6 +508,10 @@
     justify-content: center;
     padding-bottom: 20px;
     display: none;
+  }
+
+  .testimonial-start {
+    margin-bottom: 110px;
   }
 }
 
